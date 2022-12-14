@@ -20,7 +20,7 @@
             />
           </figure>
         </div>
-        <div class="card-content">
+        <div class="card-content data-price">
           <div class="media">
             <div class="media-left">
               <figure class="image is-48x48">
@@ -50,7 +50,7 @@
       let elements = document.querySelectorAll(".product");
 
       for(let element of elements){
-        element.attributes["data-price"] = document.querySelector(".price").textContent;
+        element.setAttribute("data-price", document.querySelector(".price").textContent);
         console.log(element.attributes);
       }
     </script>
